@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Modal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+
+    <h2>Formulario con Ventana Modal</h2>
+
+    <input type="text" id="textoInput" placeholder="Escribe algo">
+    <button id="cambiarColorBtn">Cambiar Color</button>
+    <button id="enviarBtn">Enviar</button>
+
+    <!-- Modal -->
+    <div id="miModal" class="modal">
+        <div class="modal-content" id="contenidoModal">
+            <h3>Texto Ingresado</h3>
+            <p id="modalTexto"></p>
+            <button id="cambiarColorModalBtn">Cambiar Color en Modal</button>
+            <button id="cerrarModalBtn">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+
+</body>
+</html>
